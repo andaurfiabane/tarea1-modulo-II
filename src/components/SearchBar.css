@@ -1,0 +1,17 @@
+.search-bar {
+  margin-left: auto; 
+}
+
+.search-bar input {
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  border: 1px solid #d1d5db; 
+  font-size: 0.9rem;
+  outline: none;
+  width: 12rem; 
+}
+
+.search-bar input::placeholder {
+  color: #9ca3af; 
+}
+

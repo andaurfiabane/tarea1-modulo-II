@@ -4,7 +4,7 @@ import './ProductList.css';
 
 function ProductList() {
   return (
-    <section className="products-grid">
+    <section className="products-grid" alt="Listado de productos">
       {products.map((product) => (
         <ProductCard
           key={product.id}

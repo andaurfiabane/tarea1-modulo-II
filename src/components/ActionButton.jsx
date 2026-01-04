@@ -1,16 +1,18 @@
 import './ActionButton.css';
 
-function ActionButton({ stock }) {
-  const isAvailable = stock > 0;
+function ActionButton({ label, onClick, available }) {
 
   return (
-    <button
-      className={`action-button ${
-        isAvailable ? "btn-primary" : "btn-secondary"
-      }`}
-    >
-      {isAvailable ? "Agregar al carrito" : "Notificarme"}
-    </button>
+    <div style={{ position: "relative" }}>
+      <button
+        className={`action-button ${available ? "btn-primary" : "btn-secondary"}`}
+         disabled={!available}
+         onClick={onClick}
+         alt={`botón ${label}`}
+      >
+      {label}
+      </button>
+    </div>
   );
 }
 

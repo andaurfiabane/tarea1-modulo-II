@@ -8,7 +8,7 @@
   font-size: 0.9rem;
 }
 
-/* Stock disponible */
+/* Habilitado */
 .btn-primary {
   background-color: #7c3aed;
   color: #ffffff;
@@ -18,7 +18,7 @@
   background-color: #9333ea;
 }
 
-/* Sin stock */
+/* Deshabilitado */
 .btn-secondary {
   background-color: #e5e7eb;
   color: #374151;

@@ -2,9 +2,9 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" alt="Pie de página">
       <div className="footer-columns">
-        <div className="footer-column">
+        <div className="footer-column" alt="Dirección y horario de atención">
           <h3>TIENDAS</h3>
           <p> Alonso de Córdova 102202, Vitacura</p>
           <p>
@@ -12,7 +12,7 @@ function Footer() {
             Lunes a Viernes 09:00 - 18:30
           </p>
         </div>
-        <div className="footer-column">
+        <div className="footer-column" alt="Medios de contacto">
           <h3>COMPRAS ONLINE</h3>
           <a href="#" className="footer-link">¿Dudas con tu pedido?</a>
           <br />
@@ -24,7 +24,7 @@ function Footer() {
             Escríbenos: corejempl@ipss.cl
           </a>
         </div>
-        <div className="footer-column">
+        <div className="footer-column" alt="Información de la tienda">
           <h3>INFORMACIONES</h3>
           <a href="#" className="footer-link">Quiénes somos</a>
           <br />
@@ -33,7 +33,7 @@ function Footer() {
           <a href="#" className="footer-link">Políticas de cambio y devolución</a>
         </div>
       </div>
-      <div className="footer-bottom">
+      <div className="footer-bottom" alt="Derechos reservados">
         © 2026 - Perfumería FullStack, Todos Los Derechos Reservados
       </div>
     </footer>
