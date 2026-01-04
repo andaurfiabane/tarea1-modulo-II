@@ -1,4 +1,8 @@
-# Proyecto e-commerce React - Tarea 1 del módulo II - Diplomado FullStack
+# Proyecto e-commerce React - Tarea 1 del módulo II - Diplomado FullStack (Paolo Stephano Andaur Fiabane)
+
+## Nombre del proyecto
+
+Perfumería FullStack.
 
 ## Descripción
 
@@ -6,12 +10,12 @@ Proyecto de e-commerce (perfumería) básico creado con React, enfocado en la cr
 
 ## Componentes
 
-- Header: Encabezado principal de la aplicación. Posee un logo, nombre de la tienda y una barra de búsqueda (la barra es solo visual)
-- SearchBar: Barra de búsqueda de productos (por ahora es solo un componente que se visualiza, no ejecuta ninguna acción)
-- ProductList: Listado de productos (por ahora se obtienen de un archivo JSON)
+- Header: Encabezado principal de la aplicación. Posee un logo, nombre de la tienda y una barra de búsqueda (la barra es solo visual).
+- SearchBar: Barra de búsqueda de productos (por ahora es solo un componente que se visualiza, no ejecuta ninguna acción).
+- ProductList: Listado de productos (por ahora se obtienen de un archivo JSON).
 - ProductCard: Tarjeta individual de cada producto. Despliega información como una imagen del producto, el género al cual está dirigido el perfume, su nombre, precio y un botón para agregar al carrito (se emula por ahora) en caso de contar con stock. 
 - GenderLabel: Etiqueta visual según categoría o género del producto, la cual cambia de estilo dependiendo del género.
-- ActionButton: Botón reutilizable que recibe un texto para el botón, evento 'onClick' y si está disponible o no (para habilitarlo o no dependiendo del caso)
+- ActionButton: Botón reutilizable que recibe un texto para el botón, evento 'onClick' y si está disponible o no (para habilitarlo o no dependiendo del caso).
 - Footer: Pie de página de la aplicación. Contiene información básica de la tienda.
 
 ## Instrucciones para ejecutar el proyecto
@@ -34,18 +38,25 @@ Proyecto de e-commerce (perfumería) básico creado con React, enfocado en la cr
 
 ## Capturas de pantalla
 
-- Vista 1 de la página web (desktop) (cabecera con cuerpo)
+- Vista general 1 del ecommerce (desktop) (cabecera con cuerpo)
+<br>
 <br>
 ![Vista principal 1](./src/screens/web_perfumeria_fullstack_1.png)
-
-- Vista 2 de la página web (desktop) (cuerpo y footer)
+<br>
+<br>
+- Vista general 2 del ecommerce (desktop) (cuerpo y footer)
+<br>
 <br>
 ![Vista principal 2](./src/screens/web_perfumeria_fullstack_2.png)
-
+<br>
+<br>
 - Vista al agregar un producto al carrito (manejo de estados)
 <br>
+<br>
 ![Producto agregado al carrito (manejo de estados)](./src/screens/web_perfumeria_fullstack_uso_estado_3.png)
-
+<br>
+<br>
 - Vista despliega solo 1 producto en un tamaño de pantalla más pequeño (mobile)
+<br>
 <br>
 ![Despliega 1 solo producto al establecer un tamaño de pantalla más pequeño](./src/screens/web_1_producto_por_fila_4.png)
