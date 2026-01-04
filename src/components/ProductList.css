@@ -1,0 +1,16 @@
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  justify-items: center;
+}
+
+/* Escritorio */
+@media (min-width: 64rem) { 
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 75rem;          
+    margin: 0 auto;
+  }
+}
