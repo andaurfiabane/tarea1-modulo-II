@@ -1,21 +1,51 @@
-<<<<<<< HEAD
-# React + Vite
+# Proyecto e-commerce React - Tarea 1 del módulo II - Diplomado FullStack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Proyecto de e-commerce (perfumería) básico creado con React, enfocado en la creación de componentes reutilizables, los cuales se mencionan y explican brevemente a continuación.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Componentes
 
-## React Compiler
+- Header: Encabezado principal de la aplicación. Posee un logo, nombre de la tienda y una barra de búsqueda (la barra es solo visual)
+- SearchBar: Barra de búsqueda de productos (por ahora es solo un componente que se visualiza, no ejecuta ninguna acción)
+- ProductList: Listado de productos (por ahora se obtienen de un archivo JSON)
+- ProductCard: Tarjeta individual de cada producto. Despliega información como una imagen del producto, el género al cual está dirigido el perfume, su nombre, precio y un botón para agregar al carrito (se emula por ahora) en caso de contar con stock. 
+- GenderLabel: Etiqueta visual según categoría o género del producto, la cual cambia de estilo dependiendo del género.
+- ActionButton: Botón reutilizable que recibe un texto para el botón, evento 'onClick' y si está disponible o no (para habilitarlo o no dependiendo del caso)
+- Footer: Pie de página de la aplicación. Contiene información básica de la tienda.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Instrucciones para ejecutar el proyecto
 
-## Expanding the ESLint configuration
+1. Abrir consola
+2. Situarse en la carpeta donde se dejará el repositorio, ej: cd C:\workspace
+3. Clonar el repositorio: git clone https://github.com/andaurfiabane/tarea1-modulo-II.git
+4. Ubicarse en el directorio: cd tarea1-modulo-II
+5. Instalar dependencias: npm install
+6. Ejecutar aplicación: npm run dev
+7. Abrir el navegador: http://localhost:5173  para poder visualizar el proyecto (si no carga, ratificar el link en la consola donde se ejecutó npm run dev)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# tarea1-modulo-II
-Repositorio para subir tarea 1 de módulo II
->>>>>>> ff4eff592420daea650fd41574c93e51b4d5840d
+## Tecnologías utilizadas
+
+- React
+- Vite
+- JavaScript
+- CSS
+- Git y GitHub
+
+## Capturas de pantalla
+
+- Vista 1 de la página web (desktop) (cabecera con cuerpo)
+<br>
+![Vista principal 1](./src/screens/web_perfumeria_fullstack_1.png)
+
+- Vista 2 de la página web (desktop) (cuerpo y footer)
+<br>
+![Vista principal 2](./src/screens/web_perfumeria_fullstack_2.png)
+
+- Vista al agregar un producto al carrito (manejo de estados)
+<br>
+![Producto agregado al carrito (manejo de estados)](./src/screens/web_perfumeria_fullstack_uso_estado_3.png)
+
+- Vista despliega solo 1 producto en un tamaño de pantalla más pequeño (mobile)
+<br>
+![Despliega 1 solo producto al establecer un tamaño de pantalla más pequeño](./src/screens/web_1_producto_por_fila_4.png)
