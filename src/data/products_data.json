@@ -4,6 +4,7 @@
     "name": "DKNY Be Delicious EDP 100 ML",
     "price": "44.900",
     "gender": "Mujer",
+    "stock": 35,
     "image": "perfume1.webp"
   },
   {
@@ -11,6 +12,7 @@
     "name": "Azzaro The Most Wanted EDP Intense 50 ML",
     "price": "46.900",
     "gender": "Hombre",
+    "stock": 5,
     "image": "perfume2.webp"
   },
   {
@@ -18,6 +20,7 @@
     "name": "Lancome La Vie Est Belle EDP 100 ML Recargable",
     "price": "93.900",
     "gender": "Mujer",
+    "stock": 10,
     "image": "perfume3.webp"
   },
   {
@@ -25,6 +28,7 @@
     "name": "Calvin Klein CK One EDT 50 ml",
     "price": "16.900",
     "gender": "Unisex",
+    "stock": 0,
     "image": "perfume4.webp"
   }
 ]

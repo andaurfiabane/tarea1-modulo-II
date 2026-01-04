@@ -1,0 +1,25 @@
+.action-button {
+  width: 100%;
+  border: none;
+  padding: 0.625rem 1.125rem;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Stock disponible */
+.btn-primary {
+  background-color: #7c3aed;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #9333ea;
+}
+
+/* Sin stock */
+.btn-secondary {
+  background-color: #e5e7eb;
+  color: #374151;
+}

@@ -12,6 +12,7 @@ function ProductList() {
           name={product.name}
           price={product.price}
           gender={product.gender}
+          stock={product.stock}
         />
       ))}
     </section>

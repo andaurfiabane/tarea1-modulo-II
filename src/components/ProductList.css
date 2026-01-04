@@ -1,7 +1,7 @@
 .products-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: 2rem;
   padding: 1.5rem;
   justify-items: center;
 }
@@ -12,5 +12,6 @@
     grid-template-columns: repeat(3, 1fr);
     max-width: 75rem;          
     margin: 0 auto;
+    gap: 2rem;
   }
 }
