@@ -1,6 +1,6 @@
 import './ProductCard.css'
-import GenderLabel from './GenderLabel';
-import ActionButton from './ActionButton';
+import GenderLabel from '../GenderLabel/GenderLabel';
+import ActionButton from '../ActionButton/ActionButton';
 import { useState } from 'react';
 
 function ProductCard(props) {
@@ -13,12 +13,12 @@ function ProductCard(props) {
   const manejarClick = () => {
     if (isAvailable) {
       setMensaje("Producto agregado al carrito");
-      setTimeout(() => setMensaje(false), 3000); // se oculta después de 3s
+      setTimeout(() => setMensaje(null), 3000); // se oculta después de 3s
     } 
   };
 
   return (
-    <div className="product-card" alt="Producto">
+    <div className="product-card" alt={"Producto: " + props.name}>
       <GenderLabel gender={props.gender} />
       <div className='product-main'>
         <div className="product-image">

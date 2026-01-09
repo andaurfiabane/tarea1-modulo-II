@@ -1,5 +1,5 @@
-import ProductCard from './ProductCard';
-import products from '../data/products_data.json';
+import ProductCard from '../ProductCard/ProductCard'
+import products from '../../data/products_data.json';
 import './ProductList.css';
 
 function ProductList() {

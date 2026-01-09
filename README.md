@@ -39,10 +39,10 @@ Proyecto de e-commerce (perfumería) básico creado con React, enfocado en la cr
 ## Capturas de pantalla
 
 **Vista general 1 del ecommerce (desktop) (cabecera con cuerpo).**
-![Vista principal 1](./src/screens/web_perfumeria_fullstack_1.png)
+![Vista principal 1](./src/assets/images/screenshots/web_perfumeria_fullstack_1.png)
 **Vista general 2 del ecommerce (desktop) (cuerpo y footer).**
-![Vista principal 2](./src/screens/web_perfumeria_fullstack_2.png)
+![Vista principal 2](./src/assets/images/screenshots/web_perfumeria_fullstack_2.png)
 **Vista al agregar un producto al carrito (manejo de estados).**
-![Producto agregado al carrito (manejo de estados)](./src/screens/web_perfumeria_fullstack_uso_estado_3.png)
+![Producto agregado al carrito (manejo de estados)](./src/assets/images/screenshots/web_perfumeria_fullstack_uso_estado_3.png)
 **Vista despliega solo 1 producto en un tamaño de pantalla más pequeño (mobile).**
-![Despliega 1 solo producto al establecer un tamaño de pantalla más pequeño](./src/screens/web_1_producto_por_fila_4.png)
+![Despliega 1 solo producto al establecer un tamaño de pantalla más pequeño](./src/assets/images/screenshots/web_1_producto_por_fila_4.png)

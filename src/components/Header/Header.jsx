@@ -1,6 +1,6 @@
 import './Header.css'
-import logo from '../assets/images/logo.png'
-import SearchBar from './SearchBar';
+import logo from '../../assets/images/logo.png'
+import SearchBar from '../SearchBar/SearchBar';
 
 function Header() {
   return (
