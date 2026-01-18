@@ -7,7 +7,6 @@ function ProductCard(props) {
   const isAvailable = props.stock > 0;
   const label = isAvailable ? "Agregar al carrito" : "Producto no disponible";
 
-  /*Manejo de estado*/ 
   const [mensaje, setMensaje] = useState(null);
 
   const manejarClick = () => {
@@ -31,7 +30,6 @@ function ProductCard(props) {
       </div>
       <div className="product-footer">
         <ActionButton label={label} onClick={manejarClick} available={isAvailable}/>
-        {/* Mensaje emergente al agregar producto*/}
         {mensaje && <div className="toast-message" alt="Mensaje emergente"><p>{mensaje}</p></div>}  
       </div>
     </div>

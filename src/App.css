@@ -1,13 +1,42 @@
+:root {
+  --bg-main: #ffffff;
+  --text-main: #1f2937;
+}
+
+.dark {
+  --bg-main: #0f172a;
+  --text-main: #e5e7eb;
+}
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
   font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  color: var(--text-main);
 }
 
 main {
-  padding-bottom: 0.5rem; 
+  padding-bottom: 0.5rem;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
 
+main.container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
