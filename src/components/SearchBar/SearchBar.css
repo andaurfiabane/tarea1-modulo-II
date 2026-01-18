@@ -3,30 +3,27 @@
   margin-left: auto;
 }
 
-/* INPUT */
 .search-bar input,
 .search-bar-header input {
   padding: 0.45rem 0.9rem;
   width: 14rem;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   outline: none;
 
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.295);
   color: #ffffff;
 
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Placeholder */
 .search-bar input::placeholder,
 .search-bar-header input::placeholder {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Focus */
 .search-bar input:focus,
 .search-bar-header input:focus {
   background-color: rgba(255, 255, 255, 0.25);

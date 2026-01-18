@@ -2,14 +2,19 @@ import "./GenderLabel.css";
 
 function GenderLabel({ gender }) {
  
-  let genderClass = "label-hombre";
+  const woman = "mujer";
+  const unisex = "unisex";
+  const man = "hombre";
+  const label = "label-";
+  
+  let genderClass = label+man;
 
   const nGender = gender.toLowerCase();
 
-  if (nGender === "mujer") {
-    genderClass = "label-mujer";
-  } else if (nGender === "unisex") {
-    genderClass = "label-unisex";
+  if (nGender === woman) {
+    genderClass = label+woman;
+  } else if (nGender === unisex) {
+    genderClass = label+unisex;
   }
 
   return (

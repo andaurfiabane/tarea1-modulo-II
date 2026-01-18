@@ -1,0 +1,29 @@
+.empty-state {
+  margin: 4rem auto;
+  padding: 3rem 2.5rem;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  border-radius: 1rem;
+
+  box-shadow: var(--card-shadow);
+}
+
+.empty-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.empty-state h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}

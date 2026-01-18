@@ -23,8 +23,10 @@ function App() {
         searchValue={searchTerm} 
         onSearchChange={setSearchTerm}
       />
-      <main className='container'>
-        <ProductList searchTerm={searchTerm}/>
+      <main>
+        <div className='container'>
+          <ProductList searchTerm={searchTerm}/>
+        </div>
       </main>
       <Footer />
     </div>
