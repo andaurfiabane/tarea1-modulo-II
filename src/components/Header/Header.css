@@ -1,7 +1,7 @@
 .header {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   background-color: var(--accent-color);
   color: white;
   position: relative;

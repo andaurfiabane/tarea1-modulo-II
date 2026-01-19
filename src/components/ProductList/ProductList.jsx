@@ -3,6 +3,11 @@ import { useState } from 'react';
 import './ProductList.css';
 import EmptyState from '../EmptyState/EmptyState';
 import { useEffect } from 'react';
+import Loader from '../Loader/Loader';
+import ErrorMessage from '../ErrorMessage/ErrorMessage';
+import StateMessage from '../StateMessage/StateMessage';
+
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 function ProductList({ searchTerm }) {
   const emptyTitle = "No se encontraron productos";
@@ -24,6 +29,10 @@ function ProductList({ searchTerm }) {
           throw new Error(loadingError);
         }
         const data = await response.json();
+
+        /* Simulación de retraso para ver el efecto del loader (se deja a propósito para la entrega de esta tarea))*/
+        await delay(500);
+
         setProducts(data.products);
       } catch (err) {
         setError(err.message);
@@ -42,7 +51,7 @@ function ProductList({ searchTerm }) {
   if (isLoading) {
     return (
       <section className="products-wrapper">
-        <p>Cargando productos...</p>
+        <Loader text="Cargando productos..." />
       </section>
     );
   }
@@ -50,7 +59,20 @@ function ProductList({ searchTerm }) {
   if (error) {
     return (
       <section className="products-wrapper">
-        <p>{error}</p>
+        <ErrorMessage
+          title="Error al cargar productos"
+          description="No pudimos obtener la información desde el servidor."
+          icon="⚠️"
+          onRetry={() => window.location.reload()}
+        />
+        <StateMessage 
+          type="error"
+          icon="⚠️"
+          title="Error al cargar productos"
+          description="No pudimos obtener la información desde el servidor."
+          actionLabel="Reintentar"
+          onAction={() => window.location.reload()}
+        />
       </section>
     );
   }
@@ -71,10 +93,11 @@ function ProductList({ searchTerm }) {
           ))}
         </div>
       ) : (
-        <EmptyState
+        <StateMessage
+          type="empty"
+          icon={emptyIcon}
           title={emptyTitle}
           description={emptyMessage}
-          icon={emptyIcon}
         />
       )}
     </section>

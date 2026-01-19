@@ -10,12 +10,15 @@ Proyecto de e-commerce (perfumería) básico creado con React, enfocado en la cr
 
 ## Componentes
 
-- Header: Encabezado principal de la aplicación. Posee un logo, nombre de la tienda y una barra de búsqueda (la barra es solo visual).
-- SearchBar: Barra de búsqueda de productos (por ahora es solo un componente que se visualiza, no ejecuta ninguna acción).
-- ProductList: Listado de productos (por ahora se obtienen de un archivo JSON).
-- ProductCard: Tarjeta individual de cada producto. Despliega información como una imagen, el género al cual está dirigido, nombre, precio y un botón para agregar al carrito (se emula por ahora) en caso de contar con stock. 
-- GenderLabel: Etiqueta visual según categoría o género del producto. La etiqueta varía de color dependiendo del género.
+- Header: Encabezado principal de la aplicación. Posee un logo, nombre de la tienda y una barra de búsqueda funcional, la cual permite filtrar el resultado de productos.
+- SearchBar: Barra de búsqueda de productos.
+- ProductList: Listado de productos. La obtención de los datos se realiza desde una API.
+- ProductCard: Tarjeta individual de cada producto. Despliega información como una imagen, la categoría, nombre, precio y un botón para agregar al carrito (se emula) en caso de contar con stock. 
+- CategoryLabel: Etiqueta visual según categoría del producto.
 - ActionButton: Botón reutilizable que recibe un texto, evento 'onClick' y si está disponible o no (para habilitarlo o deshabilitarlo dependiendo del caso).
+- EmptyState: Componente reutilizable al cual se le puede entregar información acerca de una búsqueda que no obtuvo resultados. Recibe un Icono, titulo y descripción del mensaje que se desea mostrar en el recuadro dentro de la página.
+- ErrorMessage: Componente reutilizable que muestra un recuadro con un icono, mensaje de error y un botón funcional, el cual permite reintentar la carga fallida.
+- Loader: Muestra un texto e icono de carga. Se utiliza asociado al estado de carga de la información de productos obtenida a través de la API.
 - Footer: Pie de página de la aplicación. Contiene información básica de la tienda.
 
 ## Instrucciones para ejecutar el proyecto
@@ -42,7 +45,13 @@ Proyecto de e-commerce (perfumería) básico creado con React, enfocado en la cr
 ![Vista principal 1](./src/assets/images/screenshots/web_perfumeria_fullstack_1.png)
 **Vista general 2 del ecommerce (desktop) (cuerpo y footer).**
 ![Vista principal 2](./src/assets/images/screenshots/web_perfumeria_fullstack_2.png)
-**Vista al agregar un producto al carrito (manejo de estados).**
-![Producto agregado al carrito (manejo de estados)](./src/assets/images/screenshots/web_perfumeria_fullstack_uso_estado_3.png)
+**Vista al agregar un producto al carrito**
+![Producto agregado al carrito (manejo de estados)](./src/assets/images/screenshots/web_perfumeria_fullstack_producto_carrito_3.png)
 **Vista despliega solo 1 producto en un tamaño de pantalla más pequeño (mobile).**
-![Despliega 1 solo producto al establecer un tamaño de pantalla más pequeño](./src/assets/images/screenshots/web_1_producto_por_fila_4.png)
+![Despliega 1 solo producto al establecer un tamaño de pantalla más pequeño](./src/assets/images/screenshots/web_1_producto_por_fila_4.
+png)
+![Despliega 1 solo producto al establecer un tamaño de pantalla más pequeño](./src/assets/images/screenshots/web_1_producto_por_fila_5.
+png)
+**Vista ejecuta Loader.**
+![Vista ejecuta Loader](./src/assets/images/screenshots/web_perfumeria_fullstack_loader_6.png)
+**Vista ejecuta mensaje de error tras no poder conectarse a la API.**
