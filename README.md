@@ -2,11 +2,11 @@
 
 ## Nombre del proyecto
 
-Perfumería FullStack.
+Tiendita FullStack.
 
 ## Descripción
 
-Proyecto de e-commerce (perfumería) básico creado con React, enfocado en la creación de componentes reutilizables, los cuales se mencionan y explican brevemente a continuación.
+Proyecto de e-commerce básico creado con React, enfocado en la creación de componentes reutilizables, los cuales se mencionan y explican brevemente a continuación.
 
 ## Componentes
 
@@ -16,9 +16,8 @@ Proyecto de e-commerce (perfumería) básico creado con React, enfocado en la cr
 - ProductCard: Tarjeta individual de cada producto. Despliega información como una imagen, la categoría, nombre, precio y un botón para agregar al carrito (se emula) en caso de contar con stock. 
 - CategoryLabel: Etiqueta visual según categoría del producto.
 - ActionButton: Botón reutilizable que recibe un texto, evento 'onClick' y si está disponible o no (para habilitarlo o deshabilitarlo dependiendo del caso).
-- EmptyState: Componente reutilizable al cual se le puede entregar información acerca de una búsqueda que no obtuvo resultados. Recibe un Icono, titulo y descripción del mensaje que se desea mostrar en el recuadro dentro de la página.
-- ErrorMessage: Componente reutilizable que muestra un recuadro con un icono, mensaje de error y un botón funcional, el cual permite reintentar la carga fallida.
-- Loader: Muestra un texto e icono de carga. Se utiliza asociado al estado de carga de la información de productos obtenida a través de la API.
+- StateMessage: Componente reutilizable que permite mostrar un mensaje de estado de la aplicación. Para este caso, se utiliza para mostrar por ejemplo una búsqueda de productos sin resultados, o bien, un mensaje de error tras no poder conectarse a la Api exitosamente (error). Para el caso del error, el mensaje que se muestra es a nivel de usuario, no se despliegan mensajes con errores técnicos (se hizo orientada a un usuario, pero el componente permite enviar cualquier mensaje). Permite configurar icono, título, descripción y una acción opcional, adaptándose a distintos contextos presentes y futuros de la interfaz.
+- Loader: Muestra un texto e icono de carga. Se utiliza para mostrar al estado de carga de la información de productos obtenida a través de la API.
 - Footer: Pie de página de la aplicación. Contiene información básica de la tienda.
 
 ## Instrucciones para ejecutar el proyecto
@@ -47,11 +46,13 @@ Proyecto de e-commerce (perfumería) básico creado con React, enfocado en la cr
 ![Vista principal 2](./src/assets/images/screenshots/web_perfumeria_fullstack_2.png)
 **Vista al agregar un producto al carrito**
 ![Producto agregado al carrito (manejo de estados)](./src/assets/images/screenshots/web_perfumeria_fullstack_producto_carrito_3.png)
-**Vista despliega solo 1 producto en un tamaño de pantalla más pequeño (mobile).**
-![Despliega 1 solo producto al establecer un tamaño de pantalla más pequeño](./src/assets/images/screenshots/web_1_producto_por_fila_4.
-png)
-![Despliega 1 solo producto al establecer un tamaño de pantalla más pequeño](./src/assets/images/screenshots/web_1_producto_por_fila_5.
-png)
+**Vista despliega solo 1 producto en un tamaño de pantalla más pequeño 1 (mobile).**
+![Despliega 1 solo producto al establecer un tamaño de pantalla más pequeño](./src/assets/images/screenshots/web_1_producto_por_fila_4.png)
+**Vista despliega solo 1 producto en un tamaño de pantalla más pequeño 2 (mobile).**
+![Despliega 1 solo producto al establecer un tamaño de pantalla más pequeño](./src/assets/images/screenshots/web_1_producto_por_fila_5.png)
 **Vista ejecuta Loader.**
 ![Vista ejecuta Loader](./src/assets/images/screenshots/web_perfumeria_fullstack_loader_6.png)
 **Vista ejecuta mensaje de error tras no poder conectarse a la API.**
+![Vista ejecuta envío de estado de error](./src/assets/images/screenshots/web_perfumeria_fullstack_error_7.png)
+**Vista ejecuta mensaje de productos no encontrados**
+![Vista ejecuta envío de estado de error](./src/assets/images/screenshots/web_perfumeria_fullstack_productos_no_encontrados_8.png)

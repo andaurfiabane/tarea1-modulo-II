@@ -1,10 +1,8 @@
 import ProductCard from '../ProductCard/ProductCard';
 import { useState } from 'react';
 import './ProductList.css';
-import EmptyState from '../EmptyState/EmptyState';
 import { useEffect } from 'react';
 import Loader from '../Loader/Loader';
-import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import StateMessage from '../StateMessage/StateMessage';
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -59,17 +57,11 @@ function ProductList({ searchTerm }) {
   if (error) {
     return (
       <section className="products-wrapper">
-        <ErrorMessage
-          title="Error al cargar productos"
-          description="No pudimos obtener la información desde el servidor."
-          icon="⚠️"
-          onRetry={() => window.location.reload()}
-        />
         <StateMessage 
           type="error"
           icon="⚠️"
           title="Error al cargar productos"
-          description="No pudimos obtener la información desde el servidor."
+          description="No pudimos obtener la información. Intenta nuevamente."
           actionLabel="Reintentar"
           onAction={() => window.location.reload()}
         />

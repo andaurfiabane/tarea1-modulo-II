@@ -34,7 +34,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom" alt="Derechos reservados">
-        © 2026 - Perfumería FullStack, Todos Los Derechos Reservados
+        © 2026 - Tiendita FullStack, Todos Los Derechos Reservados
       </div>
     </footer>
   );
