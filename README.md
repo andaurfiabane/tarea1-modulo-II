@@ -49,7 +49,7 @@ Proyecto de e-commerce básico creado con React, enfocado en la creación de com
 **Vista despliega solo 1 producto en un tamaño de pantalla más pequeño 1.**
 ![Despliega 1 solo producto al establecer un tamaño de pantalla más pequeño](./src/assets/images/screenshots/web_1_producto_por_fila_4.png)
 **Vista despliega solo 1 producto en un tamaño de pantalla más pequeño 2 (mobile).**
-![Despliega 1 solo producto al establecer un tamaño de pantalla más pequeño](./src/assets/images/screenshots/web_1_producto_por_fila_5_mobile_simulador.png)
+![Despliega 1 solo producto al establecer un tamaño de pantalla más pequeño](./src/assets/images/screenshots/web_1_producto_por_fila_5_mobile_simulador_5.png)
 **Vista ejecuta Loader.**
 ![Vista ejecuta Loader](./src/assets/images/screenshots/web_perfumeria_fullstack_loader_6.png)
 **Vista ejecuta mensaje de error tras no poder conectarse a la API.**
