@@ -1,25 +1,43 @@
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 2rem;
-  padding: 1.5rem;
-  justify-items: center;
-}
-
 .products-wrapper {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Escritorio */
-@media (min-width: 64rem) { 
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Tablet/Desktop */
+@media (min-width: 768px) {
+  .products-wrapper {
+    max-width: 1200px;
+  }
+
   .products-grid {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 75rem;          
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 2rem;
+    padding: 1.5rem;
   }
 }
 
+/* Desktop Grande */
+@media (min-width: 1280px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 2.5rem;
+  }
+}
 
+@media (min-width: 1600px) {
+  .products-grid {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1600px;
+  }
+}

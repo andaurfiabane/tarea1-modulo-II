@@ -83,3 +83,11 @@ main::before {
   margin: 0 auto;
   padding: 3rem 2rem;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
